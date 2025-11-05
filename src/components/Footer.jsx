@@ -45,7 +45,7 @@ const Footer = () => {
           <Link to="/about" className="hover:opacity-70 transition">About</Link>
           <Link to="/explore" className="hover:opacity-70 transition">Explore</Link>
           <Link to="/create" className="hover:opacity-70 transition">Create</Link>
-          <Link to="/play" className="hover:opacity-70 transition">Play-to-Earn</Link>
+          <Link to="/newsletter" className="hover:opacity-70 transition">NewsLetter</Link>
           <Link to="/faq" className="hover:opacity-70 transition">FAQs</Link>
         </nav>
       </div>

@@ -23,8 +23,8 @@ function index() {
       <div className="w-191 h-130">
         <img className="-mt-10 relative" src={BullHead} alt="" />
 
-        <div class="absolute -mt-45 ml-45 pt-4 px-5 rounded-3xl bg-linear-to-br from-[#FF1CF7] to-[#3913A7]">
-            <div class="w-[200px] h-[120px]  gap-2.5 opacity-100 rounded-3xl bg-transparent p-5">
+        <div class="absolute -mt-45 ml-39 pt-4 px-5 rounded-3xl ">
+            <div class="w-[200px] h-[120px]  gap-2.5 opacity-100 rounded-3xl bg-transparent backdrop-blur-md p-5">
               <p class="text-white">
                 G.O.A.T Head NFT <br /> By Vigmoid Sigmoid <br /> Floor price: 1.56 ETH
               </p>
