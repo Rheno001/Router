@@ -5,7 +5,7 @@ import Icon from "../../assets/dashicons.png";
 function index() {
   return (
     <div>
-      <div className="bg-[#000113] w-screen h-[752px] opacity-100 rotate-0 overflow-hidden">
+      <div className="bg-[#000113] h-screen opacity-100 rotate-0 overflow-hidden">
         <div className=" grid justify-items-end mr-20 pt-10 font-bold text-6xl bg-[linear-gradient(90deg,#FF3BFF_0%,#ECBFBF_25.6%,#D94FD5_52.1%,#ECBFBF_74.1%,#5C24FF_100%)] bg-clip-text text-transparent">
           The Future is Now. <br />
           Be Bullish on Web3.
