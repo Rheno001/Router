@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="relative w-full overflow-hidden py-10 md:py-14"
       style={{
-        background: "linear-gradient(90deg, #FF3BFF 0%, #ECBFBF 25.6%, #D94FD5 52.1%, #ECBFBF 74.1%, #5C24FF 100%)",
+        background: "linear-gradient(90deg, #0B0119 2%, #0B0119 81.86%, #0B0119 90%, #0B0119 95%, #0B0119 100%)",
       }}
     >
       {/* Background Large Image */}
@@ -32,9 +32,10 @@ const Footer = () => {
           <h1 className="hidden md:block text-transparent text-3xl font-bold bg-clip-text"
             style={{
               background:
-                "linear-gradient(90deg, #FF3BFF 0%, #ECBFBF 25.6%, #D94FD5 52.1%, #ECBFBF 74.1%, #5C24FF 100%)",
+                "linear-gradient(90deg, #0B0119 2%, #0B0119 81.86%, #0B0119 90%, #0B0119 95%, 0B0119 100%)",
             }}
           >
+            
             BULLISH
           </h1>
         </div>
