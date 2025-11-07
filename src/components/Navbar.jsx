@@ -1,7 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 import Logo from "../assets/Bullish.png";
 
 const Navbar = () => {
+  const { user, logout } = useAuth();
   return (
     <nav className="fixed top-0 left-0 w-full z-50 
       bg-linear-to-r from-[#10051A] via-[#5A007A] to-[#0A061B]
@@ -22,6 +25,7 @@ const Navbar = () => {
           { name: "Explore", path: "/Explore" },
           { name: "Partners", path: "/Partners" },
           { name: "NewsLetter", path: "/NewsLetter" },
+          { name: "Dashboard", path: "/Dashboard" },
         ].map((link) => (
           <li key={link.name}>
             <NavLink
@@ -37,6 +41,20 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      <div>
+        {user ? (
+          <>
+            <span className="mr-3 text-white">Hello, {user.email}</span>
+            <button className="bg-[#dc3545] text-white border-none px-1 py-2 rounded cursor-pointer" onClick={logout}> Logout
+            </button>
+          </>
+        ) : (
+          <Link to="/Login" className="text-white p-2">Login</Link>
+          
+          
+        )}
+      </div>
+
     </nav>
   );
 };
