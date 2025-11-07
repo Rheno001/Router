@@ -18,11 +18,11 @@ function index() {
 
           <div className="flex gap-5 px-20">
             <div className="p-[1.5px] rounded-3xl bg-linear-to-r from-purple-500 to-pink-500 text-white">
-              <div className=" rounded-3xl backdrop-blur-md bg-black p-2 w-75 h-42 ">
-                <p className="mb-2 flex items-center justify-center font-bold text-xl bg-[linear-gradient(90deg,#FF3BFF_0%,#ECBFBF_25.6%,#D94FD5_52.1%,#ECBFBF_74.1%)] bg-clip-text text-transparent">
+              <div className=" rounded-3xl backdrop-blur-md bg-black p-2 w-75 h-42 flex flex-col justify-center items-center text-center">
+                <p className="mb-2  font-bold text-xl bg-[linear-gradient(90deg,#FF3BFF_0%,#ECBFBF_25.6%,#D94FD5_52.1%,#ECBFBF_74.1%)] bg-clip-text text-transparent">
                   Profitable
                 </p>
-                <p className="flex items-center justify-center">
+                <p className="">
                   Invest in the future. Bullish empowers you to capture value in
                   the Web3 economy.
                 </p>
@@ -30,7 +30,7 @@ function index() {
             </div>
 
             <div className="p-[1.5px] rounded-3xl bg-linear-to-r from-purple-500 to-pink-500 text-white">
-              <div className="rounded-3xl bg-black backdrop-blur-md p-2 w-75 h-42">
+              <div className="rounded-3xl bg-black backdrop-blur-md p-2 w-75 h-42 flex flex-col justify-center items-center text-center">
                 <p className="mb-2 flex items-center justify-center font-bold text-xl bg-[linear-gradient(90deg,#FF3BFF_0%,#ECBFBF_25.6%,#D94FD5_52.1%,#ECBFBF_74.1%)] bg-clip-text text-transparent">
                   Sustainable
                 </p>
@@ -42,7 +42,7 @@ function index() {
             </div>
 
             <div className="p-[1.5px] rounded-3xl bg-linear-to-r from-purple-500 to-pink-500 text-white">
-              <div className="rounded-3xl bg-black backdrop-blur-md p-2 w-75 h-42">
+              <div className="rounded-3xl bg-black backdrop-blur-md p-2 w-75 h-42 flex flex-col justify-center items-center text-center">
                 <p className="mb-2 flex items-center justify-center font-bold text-xl bg-[linear-gradient(90deg,#FF3BFF_0%,#ECBFBF_25.6%,#D94FD5_52.1%,#ECBFBF_74.1%)] bg-clip-text text-transparent">
                   Accessible
                 </p>
@@ -54,7 +54,7 @@ function index() {
             </div>
 
             <div className="p-[1.5px] rounded-3xl bg-linear-to-r from-purple-500 to-pink-500 text-white">
-              <div className="rounded-3xl bg-black backdrop-blur-md p-2 w-75 h-42">
+              <div className="rounded-3xl bg-black backdrop-blur-md p-2 w-75 h-42 flex flex-col justify-center items-center text-center">
                 <p className="mb-2 flex items-center justify-center font-bold text-xl bg-[linear-gradient(90deg,#FF3BFF_0%,#ECBFBF_25.6%,#D94FD5_52.1%,#ECBFBF_74.1%)] bg-clip-text text-transparent">
                   Community-Driven
                 </p>

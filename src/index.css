@@ -1,7 +1,1 @@
 @import "tailwindcss";
-@font-face {
-  font-family: 'Bw Mitga';
-  src: url('/path/to/BwMitga.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
