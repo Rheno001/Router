@@ -16,7 +16,7 @@ function index() {
         <div>
           <div className="">
             <motion.img
-              className="w-[888px] h-[703px] absolute top-[25px] left-1/2 -translate-x-[150px]"
+              className="w-[888px] h-[703px] absolute top-[25px] left-1/2 -translate-x-[400px]"
 
               src={Bull}
               alt=""
