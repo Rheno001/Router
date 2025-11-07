@@ -5,7 +5,7 @@ import Icon from "../../assets/dashicons.png";
 function index() {
   return (
     <div>
-      <div className="bg-[#000113] w-screen h-[752px] opacity-100 rotate-0 overflow-hidden">
+      <div className="bg-[#000113] h-screen opacity-100 rotate-0 overflow-hidden">
         <div className=" grid justify-items-end mr-20 pt-10 font-bold text-6xl bg-[linear-gradient(90deg,#FF3BFF_0%,#ECBFBF_25.6%,#D94FD5_52.1%,#ECBFBF_74.1%,#5C24FF_100%)] bg-clip-text text-transparent">
           The Future is Now. <br />
           Be Bullish on Web3.
@@ -32,17 +32,15 @@ function index() {
             <p className="text-white relative top-[26px]">users onboarded</p>
           </div>
 
-          <div class="absolute top-[490px] left-[120px] border-3 rounded-3xl p-[1.5px] bg-linear-to-br from-[#FF1CF7] to-[#3913A7]">
-            <div class="absolute inset-[1.5px] rounded-3xl bg-transparent backdrop-blur-md"></div>
-            <div class="relative w-[449px] h-[166px] rounded-3xl p-5 text-white z-10">
-              <p>
+          <div className="absolute w-[349px] h-[166px] gap-2.5 -mt-45 top-[650px] left-[180px] p-[1.5px] rounded-3xl bg-linear-to-r from-purple-500 to-pink-500 text-white ">
+              <div className="text-white h-full w-full rounded-3xl backdrop-blur-md  p-2 bg-black">
                 Unleash the power of Web3 and unlock <br />
                 a world of profitable opportunities in a <br />
                 thriving and sustainable digital <br />
                 ecosystem.
-              </p>
-            </div>
+              </div>
           </div>
+
         </div>
       </div>
     </div>
