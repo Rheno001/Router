@@ -6,7 +6,7 @@ import {easeIn, easeInOut, motion} from 'framer-motion'
 function index() {
   return (
     <div>
-      <div className="bg-[#000113] h-screen overflow-x-hidden">
+      <div className="bg-[#000113] h-screen overflow-x-hidden relative">
         <div>
           <div className=" grid justify-items-end mr-20 pt-10 font-bold text-6xl bg-[linear-gradient(90deg,#FF3BFF_0%,#ECBFBF_25.6%,#D94FD5_52.1%,#ECBFBF_74.1%,#5C24FF_100%)] bg-clip-text text-transparent">
           The Future is Now. <br />
@@ -16,7 +16,8 @@ function index() {
         <div>
           <div className="">
             <motion.img
-              className="w-[888px] h-[703px] opacity-100 absolute top-[25px] left-[370px]"
+              className="w-[888px] h-[703px] absolute top-[25px] left-1/2 -translate-x-[150px]"
+
               src={Bull}
               alt=""
               initial={{x: 100, opacity: 0}}
@@ -25,7 +26,8 @@ function index() {
             />
           </div>
 
-          <div className="w-36 h-[113px] gap-1 opacity-100 absolute top-[510px] left-[1320px] rotate-0">
+          <div className="w-36 h-[113px] gap-1 absolute top-[510px] right-[120px]"
+>
             <img
               className="w-[34.75px] h-[38.76px] opacity-100 absolute top-[4.8px] left-[30.62px] rotate-0"
               src={Icon}
