@@ -16,7 +16,7 @@ export default function Login() {
   };
 
   return (
-    <div style={{ padding: '2rem', maxWidth: '400px', margin: '0 auto' }}>
+    <div className='p-4 max-w-[400px] mt-12 mx-auto'>
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <input

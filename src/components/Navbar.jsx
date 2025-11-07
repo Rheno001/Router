@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 
       bg-linear-to-r from-[#10051A] via-[#5A007A] to-[#0A061B]
-      py-4 px-10 rounded-b-3xl border-b border-fuchsia-500 flex items-center justify-between ">
+      py-4 px-10 rounded-b-3xl border-b border-fuchsia-500 flex items-center justify-between mb-5 ">
 
       {/* Logo */}
       <div className="flex items-center gap-3 pl-10">
@@ -45,7 +45,7 @@ const Navbar = () => {
         {user ? (
           <>
             <span className="mr-3 text-white">Hello, {user.email}</span>
-            <button className="bg-[#dc3545] text-white border-none px-1 py-2 rounded cursor-pointer" onClick={logout}> Logout
+            <button className="bg-[#dc3545] text-white border-none px-2 py-1 rounded cursor-pointer" onClick={logout}> Logout
             </button>
           </>
         ) : (
