@@ -1,57 +1,44 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useAuth } from "../context/AuthContext";
-import { ul } from "framer-motion/client";
+import { NavLink } from "react-router-dom";
+import Logo from "../assets/Bullish.png";
 
-function Navbar() {
-  const { user, logout } = useAuth();
+const Navbar = () => {
   return (
-    <div className="flex justify-between items-center text-white p-2 bg-linear-to-r from-[#0B0119] via-pink-500  to-[#000113]">
-      <ul className="flex">
-        <li className="text-white m-2">
-          <Link to="/">Home</Link>
-        </li>
-        <li className="text-white m-2">
-          <Link to="/About">About</Link>
-        </li>
-        <li className="text-white m-2">
-          <Link to="/Explore">Explore</Link>
-        </li>
-        <li className="text-white m-2">
-          <Link to="/NewsLetter">NewsLetter</Link>
-        </li>
-        <li className="text-white m-2">
-          <Link to="/Dashboard">Dashboard</Link>
-        </li>
+    <nav className="fixed top-0 left-0 w-full z-50 
+      bg-linear-to-r from-[#10051A] via-[#5A007A] to-[#0A061B]
+      py-4 px-10 rounded-b-3xl border-b border-fuchsia-500 flex items-center justify-between ">
 
-      </ul>
-      
-      <div>
-        {user ? (
-          <>
-            <span style={{ marginRight: "1rem" }}>Hello, {user.email}</span>
-            <button
-              onClick={logout}
-              style={{
-                background: "#dc3545",
-                color: "white",
-                border: "none",
-                padding: "0.5rem 1rem",
-                borderRadius: "4px",
-                cursor: "pointer",
-              }}
-            >
-              Logout
-            </button>
-          </>
-        ) : (
-          <Link to="/Login" className="text-white p-2">Login</Link>
-          
-          
-        )}
+      {/* Logo */}
+      <div className="flex items-center gap-3 pl-10">
+        <img src={Logo} alt="Bullish Logo" className="w-32 h-auto object-contain" />
+        
       </div>
-    </div>
+      
+
+      {/* Nav Links */}
+      <ul className="flex items-center gap-10 text-white pr-10">
+        {[
+          { name: "Home", path: "/" },
+          { name: "About", path: "/About" },
+          { name: "Explore", path: "/Explore" },
+          { name: "Partners", path: "/Partners" },
+          { name: "NewsLetter", path: "/NewsLetter" },
+        ].map((link) => (
+          <li key={link.name}>
+            <NavLink
+              to={link.path}
+              className={({ isActive }) =>
+                `hover:underline transition duration-200 ${
+                  isActive ? "font-semibold text-fuchsia-300 underline" : ""
+                }`
+              }
+            >
+              {link.name}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
-}
+};
 
 export default Navbar;
