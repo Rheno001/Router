@@ -1,4 +1,5 @@
 import Navbar from '../src/components/Navbar'
+import Scroll from '../src/components/scroll'
 import ProtectedRoute from './components/ProtectedRoute'
 import Footer from './components/Footer'
 import FooterBg from './components/Footer-bg'
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <>
+    <Scroll/>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
